@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog Cinema</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body fixed-top" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">CINEBLOG</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Film consigliati
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#interstellar">Interstellar</a></li>
+                    <li><a class="dropdown-item" href="#shining">The Shining</a></li>
+                    <li><a class="dropdown-item" href="#odyssey">The Odyssey</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+</nav>
+<header class="container">
+    <div class="row">
+        <div class="col-12">
+            <h1>FILM DA NON PERDERE!</h1>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="container my-5">
+        <div class="row film-container">
+            <article class=" col-12 col-md-4" id="interstellar">
+                <div class="card bg-black text-light" style="width: 18rem;">
+                    <img src="./foto/interstellar-foto.jpg" class="card-img-top" alt="immagine film interstellar">
+                    <div class="card-body">
+                        <h5 class="card-title">INTERSTELLAR</h5>
+                        <p class="card-text">In un futuro in cui la Terra è ormai al collasso, un gruppo di astronauti intraprende un viaggio oltre i confini dello
+                            spazio e del tempo alla ricerca di una nuova casa per l'umanità. Christopher Nolan firma un'avventura emozionante che
+                            intreccia scienza, amore e sacrificio, mettendo in discussione tutto ciò che crediamo di sapere sull'universo.</p>
+                            <a href="https://www.rottentomatoes.com/m/interstellar_2014" class="btn btn-outline-warning" target="_blank">Scopri il film</a>
+                        </div>
+                    </div>
+                </article>
+                <article class=" col-12 col-md-4" id="shining">
+                    <div class="card bg-black text-light" style="width: 18rem;">
+                        <img src="./foto/shining-foto.jpg" class="card-img-top" alt="immagine film shining">
+                        <div class="card-body">
+                            <h5 class="card-title">THE SHINING</h5>
+                            <p class="card-text">Jack Torrance accetta un lavoro come custode invernale dell'Overlook Hotel, isolato tra le montagne del Colorado. Quello
+                                che sembra un tranquillo soggiorno in famiglia si trasforma lentamente in un incubo fatto di visioni inquietanti, follia
+                                e terrore. Il capolavoro di Stanley Kubrick esplora i confini più oscuri della mente umana.</p>
+                                <a href="https://www.rottentomatoes.com/m/shining" class="btn btn-outline-warning" target="_blank">Scopri il film</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class=" col-12 col-md-4" id="odyssey">
+                        <div class="card bg-black text-light" style="width: 18rem;">
+                            <img src="./foto/odyssey-foto.jpg" class="card-img-top" alt="immagine film the odyssey">
+                            <div class="card-body">
+                                <h5 class="card-title">THE ODYSSEY</h5>
+                                <p class="card-text">Il leggendario viaggio di Odisseo prende vita in un'epica avventura tra mostri mitologici, divinità capricciose e mari
+                                    insidiosi. Dopo la guerra di Troia, l'eroe greco affronta prove straordinarie nel tentativo di tornare a Itaca e
+                                    riabbracciare la sua famiglia. Un racconto senza tempo di coraggio, ingegno e perseveranza, ispirato al poema di Omero.</p>
+                                    <a href="https://www.rottentomatoes.com/m/the_odyssey_2026" class="btn btn-outline-warning" target="_blank">Scopri il film</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="container my-5">
+                    <div class="row">
+                        <div class="col-md-8 mx-auto">
+                            <div id="carouselFilm" class="carousel slide">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselFilm" data-bs-slide-to="0" class="active"
+                                    aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselFilm" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselFilm" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="./foto/interstellar-carousel.jpg" class="d-block w-100" alt="interstellar">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./foto/shining-carousel.jpg" class="d-block w-100" alt="shining">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./foto/odyssey-carousel.jpg" class="d-block w-100" alt="odyssey">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselFilm"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselFilm"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <h2 class="text-center">FAQ</h2>
+        <section class="container my-5">
+            <div class="row">
+                <div class="col-md-10 mx-auto">
+                    <div class="accordion accordion-flush cineblog-faq" id="FAQ">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                Dove posso trovare informazioni sui film consigliati?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#FAQ">
+                            <div class="accordion-body">Per ogni film puoi consultare la relativa scheda, con una breve descrizione e un link a una fonte esterna per
+                                approfondire trama, cast e recensioni.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Come vengono selezionati i film presenti sul blog?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#FAQ">
+                        <div class="accordion-body">I film vengono scelti in base alla qualità della regia, alla sceneggiatura, alle interpretazioni e all'interesse che
+                            possono suscitare nel pubblico.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Il blog propone solo film classici o anche uscite recenti?
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#FAQ">
+                    <div class="accordion-body">CINEBLOG dà spazio sia ai grandi classici del cinema sia ai film più recenti, cercando di offrire consigli adatti a
+                        gusti e generi diversi.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    Da dove posso iniziare per approfondire il cinema classico?
+                </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#FAQ">
+                <div class="accordion-body">Un buon punto di partenza è esplorare i film di diverse epoche e dei principali generi cinematografici, prestando
+                    attenzione allo stile dei registi, alle tecniche di ripresa e all'evoluzione del linguaggio cinematografico.
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+</main>
+<section class="container my-5">
+    <h4 class="form-title">LAVORA CON NOI!</h4>
+    <form action="">
+        <div class="row">
+            <div class="col-12">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+                <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    INVIA
+                </button>
+            </div>
+        </div>
+    </form>
+</section>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">CANDIDATURA INVIATA CON SUCCESSO!</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="container-fluid text-center">
+        <div class="row">
+            <div class="col-12 mb-5">
+                <h4 class="form_title">CONTATTI UTILI</h4>
+            </div>
+            <div class="col-12 col-md-4 mb-3">
+                P.IVA: 1234567890
+            </div>
+            <div class="col-12 col-md-4 mb-3">
+                Scrittore Blog: Filippo Canario
+            </div>
+            <div class="col-12 col-md-4 mb-3 d-flex flex-column gap-2">
+                <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram me-3"></i>Instagram</a>
+                <a href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook me-3"></i>Facebook</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+crossorigin="anonymous"></script>
+</body>
+
+</html>
